@@ -2,7 +2,7 @@ import { IonButton, IonInput, IonItem } from "@ionic/react"
 import { useState } from "react"
 import {useHistory} from "react-router-dom"
 import { setUser } from "../utils/datas"
-import './Login.css'
+import "./Login.css"
 
 const Login = () => {
 
