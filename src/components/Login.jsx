@@ -2,6 +2,7 @@ import { IonButton, IonInput, IonItem } from "@ionic/react"
 import { useState } from "react"
 import {useHistory} from "react-router-dom"
 import { setUser } from "../utils/datas"
+import './Login.css'
 
 const Login = () => {
 
@@ -24,18 +25,19 @@ const Login = () => {
     const [password, setPassword] = useState("")
 
     return (
-        <>
+        <div className="login-container">
+
             <IonItem>
                 <IonInput value={email} placeholder="Email" type="email" onIonChange={e => setEmail(e.detail.value)}></IonInput>
             </IonItem>
             <IonItem>
                 <IonInput value={password} placeholder="Password" type="password" onIonChange={e => setPassword(e.detail.value)}></IonInput>
             </IonItem>
-            <IonItem>
+            {/* <IonItem> */}
                 <IonButton type="password" onClick={handleSubmit}>Envoyer</IonButton>
-            </IonItem>
+            {/* </IonItem> */}
 
-        </>
+        </div>
     )
 }
 
