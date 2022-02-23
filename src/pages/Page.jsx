@@ -6,7 +6,7 @@ import './Page.css';
 const Page = () => {
 
   let location = useLocation();
-  console.log("location",location);
+  console.log("Dans page -> location",location);
   let title = location.pathname.substring(1)
 
   return (

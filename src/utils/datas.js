@@ -1,6 +1,7 @@
 
 
 export const getUser = () => {
+    console.log("dans getUser");
     const user = JSON.parse(localStorage.getItem("user")) 
     return user
 }
